@@ -1,4 +1,5 @@
 #pragma once
+#include <iostream>
 #include <vector>
 using namespace std;
 
@@ -26,8 +27,8 @@ inline void Stos<TYP>::Clear()
 template<typename TYP>
 inline bool Stos<TYP>::IsEmpty()
 {
-	if(Kontener.empty()) return false;
-	else return true;
+	if(Kontener.empty()) return true;
+	else return false;
 }
 
 template<typename TYP>
